@@ -1,4 +1,4 @@
-#profile-title: @bird_xray-ta2bahman
+#profile-title: @bird_xray
 #profile-update-interval: 1
 {
   "log": {
@@ -36,16 +36,7 @@
     ],
     "rules": [
       {
-        "domain": [
-          "zula.ir",
-          "alfa.alfabetaa.site",
-          "mci.yektanet.info",
-          "nld26.luckernld.org",
-          "usa.fastlynew.hosting-ip.com",
-          "nl1.clear-vpn.org",
-          "rhdheysy-463252636-fryhuhhd.poshakhowdy.ir",
-          "usa82.freednet.org"
-        ],
+        "domain": "zula.ir",
         "server": "dns-direct"
       },
       {
@@ -68,8 +59,8 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "104.17.148.22",
         "104.17.147.22",
+        "104.17.148.22",
         "104.18.1.48",
         "104.18.0.48"
       ]
@@ -78,23 +69,13 @@
   },
   "inbounds": [
     {
-      "type": "tun",
-      "tag": "tun-in",
-      "mtu": 9000,
-      "inet4_address": "172.19.0.1/28",
-      "auto_route": true,
-      "strict_route": true,
-      "endpoint_independent_nat": true,
-      "stack": "gvisor",
-      "sniff": true
-    },
-    {
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "0.0.0.0",
       "listen_port": 12334,
       "sniff": true,
-      "sniff_override_destination": true
+      "sniff_override_destination": true,
+      "set_system_proxy": true
     },
     {
       "type": "direct",
@@ -109,61 +90,61 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 wifi § 0",
-        "R19 § 1",
-        "🇩🇪 § 2",
-        "🇩🇪 § 3",
-        "🇩🇪 3 § 4",
-        "🇩🇪 4 § 5",
-        "🇩🇪 5 § 6",
-        "🇩🇪 6 § 7",
-        "🇳🇱 § 8",
-        "🇩🇪 § 9",
-        "🇺🇸 § 10",
-        "🇹🇷 § 11",
-        "🇳🇱 § 12",
-        "🇮🇱 § 13",
-        "🇺🇸 § 14",
-        "🇹🇷 § 15",
-        "🇮🇳 § 16",
-        "🇨🇦 § 17",
-        "🇳🇱 § 18",
-        "🇳🇬 § 19",
-        "🇵🇦 § 20",
-        "🇺🇸 § 21",
-        "🇭🇰 § 22",
-        "🇭🇰 § 23",
-        "🇮🇶 § 24",
-        "🇷🇺 § 25",
-        "🇳🇱 § 26",
-        "🇺🇸 § 27",
-        "🇱🇹 § 28",
-        "hu § 29",
-        "🇵🇷 § 30",
-        "🇳🇬 § 31",
-        "🇭🇰 § 32",
-        "🇭🇰 § 33",
-        "🌠 § 34",
-        "y3 § 35",
-        "🇲🇦 § 36",
-        "🇸🇬 § 37",
-        "8 § 38",
-        "28 § 39",
-        "🇿🇦 § 40",
-        "🐢 § 41",
-        "u1 § 42",
-        "1 § 43",
-        "158 § 44",
-        "🇺🇸 § 45",
-        "yc § 46",
-        "🇲🇹 § 47",
-        "66 § 48",
-        "🇲🇩 § 49",
-        "🇨🇦 § 50",
-        "🇨🇦 § 51",
-        "locker ❌ § 52",
-        "y1 § 53",
-        "🇦🇹 § 54",
+        "🇵🇦 wifi🚀 § 0",
+        "🇳🇱 Wifi 🚀 § 1",
+        "🇺🇸 wifi 🚀 § 2",
+        "🇱🇹 wifi🚀 § 3",
+        "DE wifi § 4",
+        "18 Wifi § 5",
+        "FR Wifi § 6",
+        "IT Wifi § 7",
+        "82 Wifi § 8",
+        "🟡R19 § 9",
+        "🟡158 § 10",
+        "🟡🇺🇸 § 11",
+        "🟡🇭🇰 § 12",
+        "🟡🇦🇹 § 13",
+        "🟡🇮🇱 § 14",
+        "🟡u1 § 15",
+        "🟡🇵🇷 § 16",
+        "🟡66 § 17",
+        "🟡1 § 18",
+        "🟡yc § 19",
+        "🟡🇭🇰 § 20",
+        "🟡🇿🇦 § 21",
+        "🟡🌠 § 22",
+        "🟡🇳🇬 § 23",
+        "🟡🐢 § 24",
+        "🟡hu § 25",
+        "🟡🇹🇷 § 26",
+        "🔺YOUTUBE § 27",
+        "🔺YOUTUBE § 28",
+        "🔺YOUTUBE § 29",
+        "🔺YOUTUBE § 30",
+        "🔺YOUTUBE § 31",
+        "🔺YOUTUBE § 32",
+        "🔺YOUTUBE § 33",
+        "🔺YOUTUBE § 34",
+        "🔺YOUTUBE § 35",
+        "🔺YOUTUBE § 36",
+        "🔺YOUTUBE § 37",
+        "🔺YOUTUBE § 38",
+        "🔺YOUTUBE § 39",
+        "🔺YOUTUBE § 40",
+        "🔺YOUTUBE § 41",
+        "🔺YOUTUBE § 42",
+        "🔺YOUTUBE § 43",
+        "🔺YOUTUBE § 44",
+        "🔺YOUTUBE § 45",
+        "🔺YOUTUBE § 46",
+        "🔺YOUTUBE § 47",
+        "🔺YOUTUBE § 48",
+        "🔺YOUTUBE § 49",
+        "🔺YOUTUBE § 50",
+        "🔺YOUTUBE § 51",
+        "🔺YOUTUBE § 52",
+        "🔺YOUTUBE § 53",
+        "🔺YOUTUBE § 54",
         "🔺YOUTUBE § 55",
         "🔺YOUTUBE § 56",
         "🔺YOUTUBE § 57",
@@ -182,35 +163,7 @@
         "🔺YOUTUBE § 70",
         "🔺YOUTUBE § 71",
         "🔺YOUTUBE § 72",
-        "🔺YOUTUBE § 73",
-        "🔺YOUTUBE § 74",
-        "🔺YOUTUBE § 75",
-        "🔺YOUTUBE § 76",
-        "🔺YOUTUBE § 77",
-        "🔺YOUTUBE § 78",
-        "🔺YOUTUBE § 79",
-        "🔺YOUTUBE § 80",
-        "🔺YOUTUBE § 81",
-        "🔺YOUTUBE § 82",
-        "🔺YOUTUBE § 83",
-        "🔺YOUTUBE § 84",
-        "🔺YOUTUBE § 85",
-        "🔺YOUTUBE § 86",
-        "🔺YOUTUBE § 87",
-        "🔺YOUTUBE § 88",
-        "🔺YOUTUBE § 89",
-        "🔺YOUTUBE § 90",
-        "🔺YOUTUBE § 91",
-        "🔺YOUTUBE § 92",
-        "🔺YOUTUBE § 93",
-        "🔺YOUTUBE § 94",
-        "🔺YOUTUBE § 95",
-        "🔺YOUTUBE § 96",
-        "🔺YOUTUBE § 97",
-        "🔺YOUTUBE § 98",
-        "🔺YOUTUBE § 99",
-        "🔺YOUTUBE § 100",
-        "🔺YOUTUBE § 101"
+        "🔺YOUTUBE § 73"
       ],
       "default": "auto",
       "interrupt_exist_connections": true
@@ -219,61 +172,61 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 wifi § 0",
-        "R19 § 1",
-        "🇩🇪 § 2",
-        "🇩🇪 § 3",
-        "🇩🇪 3 § 4",
-        "🇩🇪 4 § 5",
-        "🇩🇪 5 § 6",
-        "🇩🇪 6 § 7",
-        "🇳🇱 § 8",
-        "🇩🇪 § 9",
-        "🇺🇸 § 10",
-        "🇹🇷 § 11",
-        "🇳🇱 § 12",
-        "🇮🇱 § 13",
-        "🇺🇸 § 14",
-        "🇹🇷 § 15",
-        "🇮🇳 § 16",
-        "🇨🇦 § 17",
-        "🇳🇱 § 18",
-        "🇳🇬 § 19",
-        "🇵🇦 § 20",
-        "🇺🇸 § 21",
-        "🇭🇰 § 22",
-        "🇭🇰 § 23",
-        "🇮🇶 § 24",
-        "🇷🇺 § 25",
-        "🇳🇱 § 26",
-        "🇺🇸 § 27",
-        "🇱🇹 § 28",
-        "hu § 29",
-        "🇵🇷 § 30",
-        "🇳🇬 § 31",
-        "🇭🇰 § 32",
-        "🇭🇰 § 33",
-        "🌠 § 34",
-        "y3 § 35",
-        "🇲🇦 § 36",
-        "🇸🇬 § 37",
-        "8 § 38",
-        "28 § 39",
-        "🇿🇦 § 40",
-        "🐢 § 41",
-        "u1 § 42",
-        "1 § 43",
-        "158 § 44",
-        "🇺🇸 § 45",
-        "yc § 46",
-        "🇲🇹 § 47",
-        "66 § 48",
-        "🇲🇩 § 49",
-        "🇨🇦 § 50",
-        "🇨🇦 § 51",
-        "locker ❌ § 52",
-        "y1 § 53",
-        "🇦🇹 § 54",
+        "🇵🇦 wifi🚀 § 0",
+        "🇳🇱 Wifi 🚀 § 1",
+        "🇺🇸 wifi 🚀 § 2",
+        "🇱🇹 wifi🚀 § 3",
+        "DE wifi § 4",
+        "18 Wifi § 5",
+        "FR Wifi § 6",
+        "IT Wifi § 7",
+        "82 Wifi § 8",
+        "🟡R19 § 9",
+        "🟡158 § 10",
+        "🟡🇺🇸 § 11",
+        "🟡🇭🇰 § 12",
+        "🟡🇦🇹 § 13",
+        "🟡🇮🇱 § 14",
+        "🟡u1 § 15",
+        "🟡🇵🇷 § 16",
+        "🟡66 § 17",
+        "🟡1 § 18",
+        "🟡yc § 19",
+        "🟡🇭🇰 § 20",
+        "🟡🇿🇦 § 21",
+        "🟡🌠 § 22",
+        "🟡🇳🇬 § 23",
+        "🟡🐢 § 24",
+        "🟡hu § 25",
+        "🟡🇹🇷 § 26",
+        "🔺YOUTUBE § 27",
+        "🔺YOUTUBE § 28",
+        "🔺YOUTUBE § 29",
+        "🔺YOUTUBE § 30",
+        "🔺YOUTUBE § 31",
+        "🔺YOUTUBE § 32",
+        "🔺YOUTUBE § 33",
+        "🔺YOUTUBE § 34",
+        "🔺YOUTUBE § 35",
+        "🔺YOUTUBE § 36",
+        "🔺YOUTUBE § 37",
+        "🔺YOUTUBE § 38",
+        "🔺YOUTUBE § 39",
+        "🔺YOUTUBE § 40",
+        "🔺YOUTUBE § 41",
+        "🔺YOUTUBE § 42",
+        "🔺YOUTUBE § 43",
+        "🔺YOUTUBE § 44",
+        "🔺YOUTUBE § 45",
+        "🔺YOUTUBE § 46",
+        "🔺YOUTUBE § 47",
+        "🔺YOUTUBE § 48",
+        "🔺YOUTUBE § 49",
+        "🔺YOUTUBE § 50",
+        "🔺YOUTUBE § 51",
+        "🔺YOUTUBE § 52",
+        "🔺YOUTUBE § 53",
+        "🔺YOUTUBE § 54",
         "🔺YOUTUBE § 55",
         "🔺YOUTUBE § 56",
         "🔺YOUTUBE § 57",
@@ -292,35 +245,7 @@
         "🔺YOUTUBE § 70",
         "🔺YOUTUBE § 71",
         "🔺YOUTUBE § 72",
-        "🔺YOUTUBE § 73",
-        "🔺YOUTUBE § 74",
-        "🔺YOUTUBE § 75",
-        "🔺YOUTUBE § 76",
-        "🔺YOUTUBE § 77",
-        "🔺YOUTUBE § 78",
-        "🔺YOUTUBE § 79",
-        "🔺YOUTUBE § 80",
-        "🔺YOUTUBE § 81",
-        "🔺YOUTUBE § 82",
-        "🔺YOUTUBE § 83",
-        "🔺YOUTUBE § 84",
-        "🔺YOUTUBE § 85",
-        "🔺YOUTUBE § 86",
-        "🔺YOUTUBE § 87",
-        "🔺YOUTUBE § 88",
-        "🔺YOUTUBE § 89",
-        "🔺YOUTUBE § 90",
-        "🔺YOUTUBE § 91",
-        "🔺YOUTUBE § 92",
-        "🔺YOUTUBE § 93",
-        "🔺YOUTUBE § 94",
-        "🔺YOUTUBE § 95",
-        "🔺YOUTUBE § 96",
-        "🔺YOUTUBE § 97",
-        "🔺YOUTUBE § 98",
-        "🔺YOUTUBE § 99",
-        "🔺YOUTUBE § 100",
-        "🔺YOUTUBE § 101"
+        "🔺YOUTUBE § 73"
       ],
       "url": "http://cp.cloudflare.com",
       "interval": "1h0m0s",
@@ -330,7 +255,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 wifi § 0",
+      "tag": "🇵🇦 wifi🚀 § 0",
+      "server": "185.237.185.89",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 Wifi 🚀 § 1",
       "server": "109.201.152.181",
       "server_port": 443,
       "method": "aes-128-cfb",
@@ -338,110 +271,265 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "R19 § 1",
-      "server": "63.180.174.194",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 § 2",
-      "server": "91.99.216.175",
-      "server_port": 443,
-      "uuid": "Warpi-Free-Vpn-In-GooglePlay",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 § 3",
-      "server": "91.98.153.140",
-      "server_port": 443,
-      "uuid": "Warpi-Free-Vpn-In-GooglePlay",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 3 § 4",
-      "server": "78.47.80.152",
-      "server_port": 443,
-      "uuid": "Warpi-Free-Vpn-In-GooglePlay",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 4 § 5",
-      "server": "78.46.136.211",
-      "server_port": 443,
-      "uuid": "Warpi-Free-Vpn-In-GooglePlay",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 5 § 6",
-      "server": "alfa.alfabetaa.site",
-      "server_port": 5551,
-      "uuid": "b98105fa-8db3-416f-878c-8cece5971187",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 6 § 7",
-      "server": "mci.yektanet.info",
-      "server_port": 55555,
-      "uuid": "a4b41dc8-b684-49e4-b3db-ade382c113d3",
-      "security": "auto",
-      "authenticated_length": true,
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 § 8",
-      "server": "nld26.luckernld.org",
-      "server_port": 443,
-      "uuid": "40d7798a-6c76-4298-a9d4-9e6181cd2dd7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cybo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 § 9",
-      "server": "usa.fastlynew.hosting-ip.com",
-      "server_port": 80,
-      "uuid": "b7c88dc6-1513-49c0-be12-1cfe37bcd25b",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cd123.global.ssl.fastly.net"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 § 10",
+      "tag": "🇺🇸 wifi 🚀 § 2",
       "server": "173.234.29.2",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
       "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 wifi🚀 § 3",
+      "server": "138.186.142.81",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇷 § 11",
+      "tag": "DE wifi § 4",
+      "server": "51.195.101.222",
+      "server_port": 443,
+      "uuid": "9cc7e16a-d681-49a2-a94a-de4cb084089e",
+      "tls": {
+        "enabled": true,
+        "server_name": "zula.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "18 Wifi § 5",
+      "server": "63.180.254.10",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "FR Wifi § 6",
+      "server": "51.178.42.187",
+      "server_port": 443,
+      "uuid": "69e9d6ac-df1c-43da-8345-c956cb05c403",
+      "tls": {
+        "enabled": true,
+        "server_name": "zula.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "IT Wifi § 7",
+      "server": "5.253.43.181",
+      "server_port": 443,
+      "uuid": "c05bb475-64d2-447b-92c0-143aa6b71d1c",
+      "tls": {
+        "enabled": true,
+        "server_name": "zula.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "82 Wifi § 8",
+      "server": "82.38.31.190",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡R19 § 9",
+      "server": "63.180.174.194",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡158 § 10",
+      "server": "45.87.175.158",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "vmess",
+      "tag": "🟡🇺🇸 § 11",
+      "server": "82.198.246.97",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🇭🇰 § 12",
+      "server": "45.82.252.109",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🇦🇹 § 13",
+      "server": "37.235.56.69",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🇮🇱 § 14",
+      "server": "89.46.239.231",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🟡u1 § 15",
+      "server": "206.71.158.37",
+      "server_port": 36300,
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
+      },
+      "password": "Yet-Another-Public-Config-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "YAPC-1.afshin.ir"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🇵🇷 § 16",
+      "server": "185.47.255.213",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡66 § 17",
+      "server": "45.159.250.190",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🟡1 § 18",
+      "server": "206.71.158.37",
+      "server_port": 35000,
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
+      },
+      "password": "Yet-Another-Public-Config-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "YAPC-1.afshin.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🟡yc § 19",
+      "server": "206.71.158.37",
+      "server_port": 35200,
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
+      },
+      "password": "Yet-Another-Public-Config-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "YAPC-1.afshin.ir"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🇭🇰 § 20",
+      "server": "203.23.128.92",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🇿🇦 § 21",
+      "server": "154.205.150.157",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🌠 § 22",
+      "server": "185.93.173.60",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🇳🇬 § 23",
+      "server": "185.255.123.166",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡🐢 § 24",
+      "server": "154.223.20.79",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🟡hu § 25",
+      "server": "109.61.39.28",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "vless",
+      "tag": "🟡🇹🇷 § 26",
       "server": "193.111.76.140",
       "server_port": 6060,
       "uuid": "598277a9-a7aa-4397-affd-e1ea12e8300f",
@@ -460,485 +548,8 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 § 12",
-      "server": "136.244.100.113",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yODLXVLz2FWNTFeSSng3Fm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 § 13",
-      "server": "89.46.239.231",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 § 14",
-      "server": "82.198.246.97",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto",
-      "authenticated_length": true,
-      "packet_encoding": "xudp"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 § 15",
-      "server": "45.136.5.90",
-      "server_port": 43390,
-      "uuid": "f656857f-a7be-4eaa-9027-bf958ba3aa8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.frnsoft.com",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 § 16",
-      "server": "45.88.183.157",
-      "server_port": 23803,
-      "uuid": "1edafc20-cffb-4921-bb2b-f00ce9864c5c",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 § 17",
-      "server": "23.95.76.59",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 § 18",
-      "server": "nl1.clear-vpn.org",
-      "server_port": 443,
-      "uuid": "dc987a94-c06c-4ab2-8fd6-7681ff514926",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Pmi83J_B4hDaLv35Au1WYYsxWzm8kyCkMEWN6a_ZCn0"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇬 § 19",
-      "server": "185.255.123.110",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇦 § 20",
-      "server": "138.186.142.81",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 § 21",
-      "server": "107.174.20.100",
-      "server_port": 55703,
-      "uuid": "7e41b486-1783-446c-b0d0-4fe1389cae84",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 § 22",
-      "server": "47.238.247.69",
-      "server_port": 25608,
-      "uuid": "575ac013-bfe8-4b24-8e9f-cc29a6bc8151",
-      "security": "auto",
-      "authenticated_length": true,
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/arki",
-        "max_early_data": 2048,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 § 23",
-      "server": "8.218.199.111",
-      "server_port": 8080,
-      "uuid": "f55db42d-ee52-4a47-880b-6f7b123ab222",
-      "security": "auto",
-      "authenticated_length": true,
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇶 § 24",
-      "server": "81.90.29.126",
-      "server_port": 53672,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yprgZbB7xDL4PSvE4wJU4m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 § 25",
-      "server": "90.156.203.62",
-      "server_port": 5112,
-      "method": "chacha20-ietf-poly1305",
-      "password": "VVlAff77CnAU43Aoc5j15Y"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 § 26",
-      "server": "rhdheysy-463252636-fryhuhhd.poshakhowdy.ir",
-      "server_port": 2095,
-      "uuid": "f502e072-14a2-4a76-9d4b-2ab33a89657c",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uevsievsusg-82828isbshshs.poshakhowdy.ir"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 § 27",
-      "server": "216.133.149.139",
-      "server_port": 23581,
-      "uuid": "b5471668-94dc-4ea5-ae97-3bb9dabcd2a9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EOYTqph-go2SazIPcSDl5pJGNyOnrR0mWaL8Tc_paEM"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 § 28",
-      "server": "185.237.185.89",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "hu § 29",
-      "server": "109.61.39.28",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇷 § 30",
-      "server": "185.47.255.213",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇬 § 31",
-      "server": "185.255.123.166",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 § 32",
-      "server": "203.23.128.92",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 § 33",
-      "server": "45.82.252.109",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🌠 § 34",
-      "server": "185.93.173.60",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "y3 § 35",
-      "server": "103.75.119.38",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇲🇦 § 36",
-      "server": "188.214.157.30",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 § 37",
-      "server": "160.16.116.227",
-      "server_port": 127,
-      "password": "uݟۖ�s�",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nintendogames.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "8 § 38",
-      "server": "147.78.0.182",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "vless",
-      "tag": "28 § 39",
-      "server": "45.15.140.38",
-      "server_port": 28495,
-      "uuid": "7e296434-2d17-48d3-928d-19eaa34aecb1",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ",
-          "short_id": "0ecc2c1392"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 § 40",
-      "server": "154.205.150.157",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🐢 § 41",
-      "server": "154.223.20.79",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "hysteria2",
-      "tag": "u1 § 42",
-      "server": "206.71.158.37",
-      "server_port": 36300,
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      },
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "1 § 43",
-      "server": "206.71.158.37",
-      "server_port": 35000,
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      },
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "158 § 44",
-      "server": "45.87.175.158",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 § 45",
-      "server": "usa82.freednet.org",
-      "server_port": 443,
-      "uuid": "4e5a0939-483c-4571-a1b1-fccbfe053923",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.utexas.edu",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "yc § 46",
-      "server": "206.71.158.37",
-      "server_port": 35200,
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      },
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇲🇹 § 47",
-      "server": "171.22.254.129",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "66 § 48",
-      "server": "45.159.250.190",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇲🇩 § 49",
-      "server": "185.153.197.5",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 § 50",
-      "server": "23.95.76.147",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 § 51",
-      "server": "45.154.204.7",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "vless",
-      "tag": "locker ❌ § 52",
-      "server": "83.222.23.113",
-      "server_port": 443,
-      "uuid": "9a8a52d6-f24b-4f03-bf6f-f4854717f54e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Jwam5OBjXf4bffZzA3IqzfcNONIMhYMgjysXPU44XFU",
-          "short_id": "c4da507c203b545a"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "y1 § 53",
-      "server": "138.186.142.80",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 § 54",
-      "server": "37.235.56.69",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 55",
+      "tag": "🔺YOUTUBE § 27",
       "server": "104.21.69.44",
       "server_port": 443,
       "uuid": "cdde0eb9-62b6-4d30-ac96-ab10d8eb7938",
@@ -963,7 +574,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 56",
+      "tag": "🔺YOUTUBE § 28",
       "server": "104.21.69.44",
       "server_port": 80,
       "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
@@ -980,7 +591,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 57",
+      "tag": "🔺YOUTUBE § 29",
       "server": "104.21.69.44",
       "server_port": 8080,
       "uuid": "cdde0eb9-62b6-4d30-ac96-ab10d8eb7938",
@@ -997,7 +608,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 58",
+      "tag": "🔺YOUTUBE § 30",
       "server": "104.21.69.44",
       "server_port": 8080,
       "uuid": "41da4eda-35a7-48a9-9c26-c605e0a0feae",
@@ -1014,7 +625,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 59",
+      "tag": "🔺YOUTUBE § 31",
       "server": "104.21.69.44",
       "server_port": 8080,
       "uuid": "3816b3f7-e029-4036-aff8-161f59c742c0",
@@ -1031,7 +642,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 60",
+      "tag": "🔺YOUTUBE § 32",
       "server": "104.22.35.155",
       "server_port": 2053,
       "uuid": "6d288402-6ef9-4092-9d52-c528690fb693",
@@ -1056,7 +667,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 61",
+      "tag": "🔺YOUTUBE § 33",
       "server": "104.26.0.117",
       "server_port": 8080,
       "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
@@ -1073,7 +684,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 62",
+      "tag": "🔺YOUTUBE § 34",
       "server": "104.26.0.117",
       "server_port": 443,
       "uuid": "16d7a04d-e6f4-479f-8914-80d3817317f9",
@@ -1098,7 +709,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 63",
+      "tag": "🔺YOUTUBE § 35",
       "server": "104.26.1.117",
       "server_port": 443,
       "uuid": "ea13b0f0-c2fa-4efc-a06f-26319622c71f",
@@ -1123,7 +734,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 64",
+      "tag": "🔺YOUTUBE § 36",
       "server": "104.26.1.117",
       "server_port": 443,
       "uuid": "bdde0eb9-62c6-4d30-ac96-ab10d8eb7939",
@@ -1148,7 +759,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 65",
+      "tag": "🔺YOUTUBE § 37",
       "server": "104.26.1.117",
       "server_port": 8443,
       "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
@@ -1173,7 +784,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 66",
+      "tag": "🔺YOUTUBE § 38",
       "server": "104.26.1.117",
       "server_port": 8443,
       "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
@@ -1198,7 +809,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 67",
+      "tag": "🔺YOUTUBE § 39",
       "server": "104.26.1.117",
       "server_port": 8443,
       "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
@@ -1223,7 +834,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 68",
+      "tag": "🔺YOUTUBE § 40",
       "server": "104.26.1.117",
       "server_port": 8443,
       "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
@@ -1248,7 +859,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 69",
+      "tag": "🔺YOUTUBE § 41",
       "server": "162.159.128.79",
       "server_port": 443,
       "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
@@ -1273,7 +884,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 70",
+      "tag": "🔺YOUTUBE § 42",
       "server": "172.67.204.84",
       "server_port": 443,
       "uuid": "48300e8d-4f24-483b-a817-f5e894f06b68",
@@ -1298,7 +909,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 71",
+      "tag": "🔺YOUTUBE § 43",
       "server": "172.67.204.84",
       "server_port": 8080,
       "uuid": "ddde0eb9-62b6-4d30-ac96-ab10d8eb7938",
@@ -1315,7 +926,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 72",
+      "tag": "🔺YOUTUBE § 44",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
@@ -1340,7 +951,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 73",
+      "tag": "🔺YOUTUBE § 45",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "b20cdbc0-e12c-4b98-97ba-1d7ea8c04ac8",
@@ -1365,7 +976,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 74",
+      "tag": "🔺YOUTUBE § 46",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "84942386-f8af-4251-8c38-c7a0f9110cd1",
@@ -1390,7 +1001,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 75",
+      "tag": "🔺YOUTUBE § 47",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "96a65814-3ac0-44bf-80f6-1ce5a1620f2f",
@@ -1415,7 +1026,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 76",
+      "tag": "🔺YOUTUBE § 48",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "0ddce4ab-1351-43fd-af7a-9cfd0778dd56",
@@ -1440,7 +1051,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 77",
+      "tag": "🔺YOUTUBE § 49",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "72111a8b-b535-4791-9b58-1837de0c58ec",
@@ -1465,7 +1076,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 78",
+      "tag": "🔺YOUTUBE § 50",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "fbb2f30a-808f-4d80-b1db-0af57e9c0d18",
@@ -1490,7 +1101,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 79",
+      "tag": "🔺YOUTUBE § 51",
       "server": "172.67.69.216",
       "server_port": 443,
       "uuid": "84155b67-f57c-4f1b-809c-f0ce68704b77",
@@ -1515,7 +1126,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 80",
+      "tag": "🔺YOUTUBE § 52",
       "server": "172.67.69.216",
       "server_port": 8080,
       "uuid": "de3e5ed6-78ae-4575-b91f-701d61c295d6",
@@ -1532,7 +1143,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 81",
+      "tag": "🔺YOUTUBE § 53",
       "server": "188.114.96.3",
       "server_port": 443,
       "uuid": "67e30c4f-50c8-4d1e-803f-09d87d97c6c0",
@@ -1557,7 +1168,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 82",
+      "tag": "🔺YOUTUBE § 54",
       "server": "188.114.96.3",
       "server_port": 8443,
       "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
@@ -1582,7 +1193,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 83",
+      "tag": "🔺YOUTUBE § 55",
       "server": "188.114.96.7",
       "server_port": 443,
       "uuid": "a45b6cb6-59b3-4e81-b819-e77b29689d43",
@@ -1607,7 +1218,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 84",
+      "tag": "🔺YOUTUBE § 56",
       "server": "188.114.96.7",
       "server_port": 443,
       "uuid": "1ed8608c-b515-4082-a754-b057e0640247",
@@ -1632,7 +1243,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 85",
+      "tag": "🔺YOUTUBE § 57",
       "server": "188.114.96.7",
       "server_port": 443,
       "uuid": "87756e07-0c02-4f38-8b55-1e2772df21b1",
@@ -1657,7 +1268,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 86",
+      "tag": "🔺YOUTUBE § 58",
       "server": "188.114.96.7",
       "server_port": 443,
       "uuid": "5050e255-4919-4d7f-96c8-30b13d06fdf6",
@@ -1682,7 +1293,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 87",
+      "tag": "🔺YOUTUBE § 59",
       "server": "188.114.97.3",
       "server_port": 8443,
       "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
@@ -1707,7 +1318,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 88",
+      "tag": "🔺YOUTUBE § 60",
       "server": "188.114.97.3",
       "server_port": 8443,
       "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
@@ -1732,7 +1343,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 89",
+      "tag": "🔺YOUTUBE § 61",
       "server": "188.114.97.3",
       "server_port": 8443,
       "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
@@ -1757,7 +1368,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 90",
+      "tag": "🔺YOUTUBE § 62",
       "server": "188.114.97.6",
       "server_port": 443,
       "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
@@ -1782,7 +1393,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 91",
+      "tag": "🔺YOUTUBE § 63",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "2b84eaef-c8ef-47f3-903d-83e7c508eac8",
@@ -1807,7 +1418,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 92",
+      "tag": "🔺YOUTUBE § 64",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "403101ad-ed54-458b-8d0e-124d6096388c",
@@ -1832,7 +1443,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 93",
+      "tag": "🔺YOUTUBE § 65",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "aa3b98ae-1807-4561-9e89-fc9c2ff97d28",
@@ -1857,7 +1468,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 94",
+      "tag": "🔺YOUTUBE § 66",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "ca1a1f9d-7588-456a-9151-d0f6db74b895",
@@ -1882,7 +1493,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 95",
+      "tag": "🔺YOUTUBE § 67",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "ae658497-2809-4ecb-86d5-db73867bfa38",
@@ -1907,7 +1518,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 96",
+      "tag": "🔺YOUTUBE § 68",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "a49f257d-52c6-439c-b66d-e4d1dca6a3c2",
@@ -1932,7 +1543,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 97",
+      "tag": "🔺YOUTUBE § 69",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "ce0251be-7f5c-427b-ae86-06ba6c3c13d8",
@@ -1957,7 +1568,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 98",
+      "tag": "🔺YOUTUBE § 70",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "bea83394-b074-4837-8b88-4e1b6681160c",
@@ -1982,7 +1593,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 99",
+      "tag": "🔺YOUTUBE § 71",
       "server": "188.114.97.7",
       "server_port": 443,
       "uuid": "d16ad333-f353-4fd3-b457-01d147578c3a",
@@ -2007,7 +1618,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 100",
+      "tag": "🔺YOUTUBE § 72",
       "server": "zula.ir",
       "server_port": 8080,
       "uuid": "f5b62999-fee8-4822-b9ae-8bd6383422aa",
@@ -2024,7 +1635,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 101",
+      "tag": "🔺YOUTUBE § 73",
       "server": "zula.ir",
       "server_port": 8080,
       "uuid": "85f7e5d9-cee3-4df1-8cd3-546f023ed254",
@@ -2114,7 +1725,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:16756",
-      "secret": "PyLz-D-8hhULES-J"
+      "secret": "_VRXCqKLgSOCGvbG"
     }
   }
 }
