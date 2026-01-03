@@ -10,7 +10,7 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tcp://8.8.8.8",
+        "address": "udp://1.1.1.1",
         "address_resolver": "dns-direct"
       },
       {
@@ -20,7 +20,7 @@
       },
       {
         "tag": "dns-direct",
-        "address": "8.8.8.8",
+        "address": "1.1.1.1",
         "address_resolver": "dns-local",
         "detour": "direct"
       },
@@ -36,14 +36,11 @@
     ],
     "rules": [
       {
-        "domain": [
-          "6nwctkaorvnx.toshibl2hvc.lat",
-          "iranserver.com"
-        ],
+        "domain": "iranserver.com",
         "server": "dns-direct"
       },
       {
-        "domain": "google.com",
+        "domain": "cp.cloudflare.com",
         "server": "dns-remote",
         "rewrite_ttl": 3000
       },
@@ -64,8 +61,8 @@
       "sky.rethinkdns.com": [
         "104.17.148.22",
         "104.17.147.22",
-        "104.18.0.48",
-        "104.18.1.48"
+        "104.18.1.48",
+        "104.18.0.48"
       ]
     },
     "independent_cache": true
@@ -93,46 +90,46 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 wifi 🚀 § 0",
-        "🇳🇱 wifi § 1",
-        "🇳🇱 [Wifi] 1 § 2",
-        "🇳🇱 [Wifi] 2 § 3",
-        "🇳🇱 [Wifi] 4 § 4",
-        "🇳🇱 [Wifi] 3 § 5",
-        "🇳🇱 [Wifi] 5 § 6",
-        "🇳🇱 [Wifi] 6 § 7",
-        "🇳🇱 [Wifi] 7 § 8",
-        "🇳🇱 [Wifi] 8 § 9",
-        "🇳🇱 [Wifi] 9 § 10",
-        "🇳🇱 [Wifi] 10 § 11",
-        "🇳🇱 [Wifi] 11 § 12",
-        "🇳🇱 [Wifi] 12 § 13",
-        "🇱🇹 [Wifi] 13 § 14",
-        "🇱🇹 [Wifi] 14 § 15",
-        "Slow !  § 16",
-        "Slow !  § 17",
-        "Slow !  § 18",
-        "Slow !  § 19",
+        "20✅متصل § 0",
+        "30✅متصل § 1",
+        "40✅متصل § 2",
+        "50✅متصل § 3",
+        "12✅متصل § 4",
+        "13✅متصل § 5",
+        "11✅متصل § 6",
+        "10✅متصل § 7",
+        "9✅متصل § 8",
+        "8✅متصل § 9",
+        "7✅متصل § 10",
+        "6✅متصل § 11",
+        "5✅متصل § 12",
+        "4✅متصل § 13",
+        "3✅متصل § 14",
+        "2✅متصل § 15",
+        "1✅متصل § 16",
+        "🐢 § 17",
+        "slow 1 § 18",
+        "🇳🇱 wifi § 19",
         "Slow !  § 20",
-        "Slow !  § 21",
-        "Slow !  § 22",
-        "Slow !  § 23",
-        "Slow !  § 24",
-        "Slow !  § 25",
-        "NethersLand 5 § 26",
-        "others fr  § 27",
-        "others CA🐢 § 28",
-        "hu § 29",
-        "🐢 § 30",
-        "🇦🇪 § 31",
-        "others GB § 32",
-        "slow 1 § 33",
-        "ITALY § 34",
-        "FRANCE § 35",
-        "HK § 36",
-        "JAPAN § 37",
-        "Germany 1 § 38",
-        "NL Wifi !  § 39",
+        "🔺YOUTUBE § 21",
+        "🔺YOUTUBE § 22",
+        "🔺YOUTUBE § 23",
+        "🔺YOUTUBE § 24",
+        "🔺YOUTUBE § 25",
+        "🔺YOUTUBE § 26",
+        "🔺YOUTUBE § 27",
+        "🔺YOUTUBE § 28",
+        "🔺YOUTUBE § 29",
+        "🔺YOUTUBE § 30",
+        "🔺YOUTUBE § 31",
+        "🔺YOUTUBE § 32",
+        "🔺YOUTUBE § 33",
+        "🔺YOUTUBE § 34",
+        "🔺YOUTUBE § 35",
+        "🔺YOUTUBE § 36",
+        "🔺YOUTUBE § 37",
+        "🔺YOUTUBE § 38",
+        "🔺YOUTUBE § 39",
         "🔺YOUTUBE § 40",
         "🔺YOUTUBE § 41",
         "🔺YOUTUBE § 42",
@@ -160,26 +157,7 @@
         "🔺YOUTUBE § 64",
         "🔺YOUTUBE § 65",
         "🔺YOUTUBE § 66",
-        "🔺YOUTUBE § 67",
-        "🔺YOUTUBE § 68",
-        "🔺YOUTUBE § 69",
-        "🔺YOUTUBE § 70",
-        "🔺YOUTUBE § 71",
-        "🔺YOUTUBE § 72",
-        "🔺YOUTUBE § 73",
-        "🔺YOUTUBE § 74",
-        "🔺YOUTUBE § 75",
-        "🔺YOUTUBE § 76",
-        "🔺YOUTUBE § 77",
-        "🔺YOUTUBE § 78",
-        "🔺YOUTUBE § 79",
-        "🔺YOUTUBE § 80",
-        "🔺YOUTUBE § 81",
-        "🔺YOUTUBE § 82",
-        "🔺YOUTUBE § 83",
-        "🔺YOUTUBE § 84",
-        "🔺YOUTUBE § 85",
-        "🔺YOUTUBE § 86"
+        "🔺YOUTUBE § 67"
       ],
       "default": "auto",
       "interrupt_exist_connections": true
@@ -188,46 +166,46 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 wifi 🚀 § 0",
-        "🇳🇱 wifi § 1",
-        "🇳🇱 [Wifi] 1 § 2",
-        "🇳🇱 [Wifi] 2 § 3",
-        "🇳🇱 [Wifi] 4 § 4",
-        "🇳🇱 [Wifi] 3 § 5",
-        "🇳🇱 [Wifi] 5 § 6",
-        "🇳🇱 [Wifi] 6 § 7",
-        "🇳🇱 [Wifi] 7 § 8",
-        "🇳🇱 [Wifi] 8 § 9",
-        "🇳🇱 [Wifi] 9 § 10",
-        "🇳🇱 [Wifi] 10 § 11",
-        "🇳🇱 [Wifi] 11 § 12",
-        "🇳🇱 [Wifi] 12 § 13",
-        "🇱🇹 [Wifi] 13 § 14",
-        "🇱🇹 [Wifi] 14 § 15",
-        "Slow !  § 16",
-        "Slow !  § 17",
-        "Slow !  § 18",
-        "Slow !  § 19",
+        "20✅متصل § 0",
+        "30✅متصل § 1",
+        "40✅متصل § 2",
+        "50✅متصل § 3",
+        "12✅متصل § 4",
+        "13✅متصل § 5",
+        "11✅متصل § 6",
+        "10✅متصل § 7",
+        "9✅متصل § 8",
+        "8✅متصل § 9",
+        "7✅متصل § 10",
+        "6✅متصل § 11",
+        "5✅متصل § 12",
+        "4✅متصل § 13",
+        "3✅متصل § 14",
+        "2✅متصل § 15",
+        "1✅متصل § 16",
+        "🐢 § 17",
+        "slow 1 § 18",
+        "🇳🇱 wifi § 19",
         "Slow !  § 20",
-        "Slow !  § 21",
-        "Slow !  § 22",
-        "Slow !  § 23",
-        "Slow !  § 24",
-        "Slow !  § 25",
-        "NethersLand 5 § 26",
-        "others fr  § 27",
-        "others CA🐢 § 28",
-        "hu § 29",
-        "🐢 § 30",
-        "🇦🇪 § 31",
-        "others GB § 32",
-        "slow 1 § 33",
-        "ITALY § 34",
-        "FRANCE § 35",
-        "HK § 36",
-        "JAPAN § 37",
-        "Germany 1 § 38",
-        "NL Wifi !  § 39",
+        "🔺YOUTUBE § 21",
+        "🔺YOUTUBE § 22",
+        "🔺YOUTUBE § 23",
+        "🔺YOUTUBE § 24",
+        "🔺YOUTUBE § 25",
+        "🔺YOUTUBE § 26",
+        "🔺YOUTUBE § 27",
+        "🔺YOUTUBE § 28",
+        "🔺YOUTUBE § 29",
+        "🔺YOUTUBE § 30",
+        "🔺YOUTUBE § 31",
+        "🔺YOUTUBE § 32",
+        "🔺YOUTUBE § 33",
+        "🔺YOUTUBE § 34",
+        "🔺YOUTUBE § 35",
+        "🔺YOUTUBE § 36",
+        "🔺YOUTUBE § 37",
+        "🔺YOUTUBE § 38",
+        "🔺YOUTUBE § 39",
         "🔺YOUTUBE § 40",
         "🔺YOUTUBE § 41",
         "🔺YOUTUBE § 42",
@@ -255,52 +233,150 @@
         "🔺YOUTUBE § 64",
         "🔺YOUTUBE § 65",
         "🔺YOUTUBE § 66",
-        "🔺YOUTUBE § 67",
-        "🔺YOUTUBE § 68",
-        "🔺YOUTUBE § 69",
-        "🔺YOUTUBE § 70",
-        "🔺YOUTUBE § 71",
-        "🔺YOUTUBE § 72",
-        "🔺YOUTUBE § 73",
-        "🔺YOUTUBE § 74",
-        "🔺YOUTUBE § 75",
-        "🔺YOUTUBE § 76",
-        "🔺YOUTUBE § 77",
-        "🔺YOUTUBE § 78",
-        "🔺YOUTUBE § 79",
-        "🔺YOUTUBE § 80",
-        "🔺YOUTUBE § 81",
-        "🔺YOUTUBE § 82",
-        "🔺YOUTUBE § 83",
-        "🔺YOUTUBE § 84",
-        "🔺YOUTUBE § 85",
-        "🔺YOUTUBE § 86"
+        "🔺YOUTUBE § 67"
       ],
-      "url": "http://google.com",
+      "url": "https://cp.cloudflare.com",
       "interval": "10m0s",
       "tolerance": 1,
       "idle_timeout": "30m0s",
       "interrupt_exist_connections": true
     },
     {
+      "type": "vless",
+      "tag": "20✅متصل § 0",
+      "server": "104.17.147.22",
+      "server_port": 8880,
+      "uuid": "Parsashonam-Bot-38",
+      "transport": {
+        "type": "ws",
+        "path": "/Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam",
+        "headers": {
+          "Host": "Fi.Parsashonam.CfD."
+        },
+        "max_early_data": 2056,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "30✅متصل § 1",
+      "server": "25.26.27.158",
+      "server_port": 2096,
+      "uuid": "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.de5.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.111000.de5.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇺🇸 wifi 🚀 § 0",
-      "server": "173.234.29.2",
-      "server_port": 990,
+      "tag": "40✅متصل § 2",
+      "server": "90.156.203.62",
+      "server_port": 5112,
       "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "password": "VVlAff77CnAU43Aoc5j15Y"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 wifi § 1",
-      "server": "109.201.152.181",
+      "type": "hysteria2",
+      "tag": "50✅متصل § 3",
+      "server": "152.67.95.183",
       "server_port": 443,
-      "method": "aes-128-cfb",
-      "password": "shadowsocks"
+      "password": "e343471a-aad3-40da-9dea-72cc8c7dce5f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "12✅متصل § 4",
+      "server": "206.71.158.37",
+      "server_port": 35200,
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
+      },
+      "password": "Yet-Another-Public-Config-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "YAPC-1.afshin.ir"
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 1 § 2",
+      "tag": "13✅متصل § 5",
+      "server": "103.186.154.14",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "11✅متصل § 6",
+      "server": "103.186.154.36",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "10✅متصل § 7",
+      "server": "103.186.154.33",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "9✅متصل § 8",
+      "server": "206.71.158.37",
+      "server_port": 36300,
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
+      },
+      "password": "Yet-Another-Public-Config-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "YAPC-1.afshin.ir"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "8✅متصل § 9",
+      "server": "107.151.182.253",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "7✅متصل § 10",
+      "server": "103.186.154.247",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "6✅متصل § 11",
       "server": "82.38.31.179",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -308,119 +384,90 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 2 § 3",
-      "server": "82.38.31.217",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 4 § 4",
-      "server": "82.38.31.187",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 3 § 5",
-      "server": "82.38.31.194",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 5 § 6",
-      "server": "82.38.31.214",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 6 § 7",
+      "tag": "5✅متصل § 12",
       "server": "82.38.31.208",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 7 § 8",
-      "server": "82.38.31.191",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+      "type": "vmess",
+      "tag": "4✅متصل § 13",
+      "server": "185.90.62.25",
+      "server_port": 28170,
+      "uuid": "3b475934-cb2a-4d96-b260-5e50cca5d430",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "imafake.locker",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/speedtest",
+        "headers": {
+          "Host": "imafake.locker"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 8 § 9",
-      "server": "82.38.31.210",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+      "tag": "3✅متصل § 14",
+      "server": "218.237.185.230",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 9 § 10",
-      "server": "82.38.31.202",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+      "tag": "2✅متصل § 15",
+      "server": "218.237.185.230",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 10 § 11",
-      "server": "82.38.31.218",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+      "tag": "1✅متصل § 16",
+      "server": "103.186.154.14",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 11 § 12",
-      "server": "136.244.100.113",
+      "tag": "🐢 § 17",
+      "server": "103.186.154.14",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "slow 1 § 18",
+      "server": "218.237.185.230",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 wifi § 19",
+      "server": "109.201.152.181",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yODLXVLz2FWNTFeSSng3Fm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 [Wifi] 12 § 13",
-      "server": "82.38.31.176",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 [Wifi] 13 § 14",
-      "server": "45.87.175.177",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cvII85TrW6n0OGyfpHVS1u"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 [Wifi] 14 § 15",
-      "server": "45.87.175.193",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cvII85TrW6n0OGyfpHVS1u"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Slow !  § 16",
-      "server": "154.223.20.79",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "method": "aes-128-cfb",
+      "password": "shadowsocks"
     },
     {
       "type": "vless",
-      "tag": "Slow !  § 17",
+      "tag": "Slow !  § 20",
       "server": "185.235.241.99",
       "server_port": 443,
       "uuid": "e615a5ba-fce3-4ffa-9c86-b0327a8a107a",
@@ -437,323 +484,16 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "shadowsocks",
-      "tag": "Slow !  § 18",
-      "server": "178.173.250.47",
-      "server_port": 56033,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5LD874oS39jQ26cT97NaAo"
-    },
-    {
       "type": "vless",
-      "tag": "Slow !  § 19",
-      "server": "185.218.3.39",
-      "server_port": 443,
-      "uuid": "e615a5ba-fce3-4ffa-9c86-b0327a8a107a",
-      "tls": {
-        "enabled": true,
-        "disable_sni": true,
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hormoz",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "Slow !  § 20",
-      "server": "6nwctkaorvnx.toshibl2hvc.lat",
-      "server_port": 2052,
-      "uuid": "2f60be6f-be0c-48b4-9772-b56f42b51ba1",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TpEz8VPxZxx1E-fckWTvTB9U4v7ZFzW65WAs2OmkbDA",
-          "short_id": "c2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Slow !  § 21",
-      "server": "82.38.31.199",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Slow !  § 22",
-      "server": "192.71.166.100",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Slow !  § 23",
-      "server": "206.71.158.37",
-      "server_port": 36300,
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      },
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Slow !  § 24",
-      "server": "45.87.175.187",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cvII85TrW6n0OGyfpHVS1u"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Slow !  § 25",
-      "server": "138.186.142.80",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "NethersLand 5 § 26",
-      "server": "82.38.31.205",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "vless",
-      "tag": "others fr  § 27",
-      "server": "37.59.112.73",
-      "server_port": 8442,
-      "uuid": "01b5f5f2-f82a-42e0-9593-5b1b8869b9ca",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "others CA🐢 § 28",
-      "server": "104.26.6.89",
-      "server_port": 80,
-      "uuid": "c5b129d7-f133-4b34-a9c6-68c9a8f70248",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "EMotioNaL-peRMIsSiONf1bs65u5f4.EcOTOuRISs.Co.uK"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "hu § 29",
-      "server": "109.61.39.28",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🐢 § 30",
-      "server": "103.186.154.14",
-      "server_port": 38388,
-      "method": "aes-256-cfb",
-      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 § 31",
-      "server": "95.174.68.33",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "YzH4id7ZEyKpfy39F2YcOmzCsBklGwh8"
-    },
-    {
-      "type": "vless",
-      "tag": "others GB § 32",
-      "server": "146.19.230.224",
-      "server_port": 443,
-      "uuid": "e615a5ba-fce3-4ffa-9c86-b0327a8a107a",
-      "tls": {
-        "enabled": true,
-        "disable_sni": true,
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hormoz",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "slow 1 § 33",
-      "server": "218.237.185.230",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vless",
-      "tag": "ITALY § 34",
-      "server": "5.253.43.181",
-      "server_port": 443,
-      "uuid": "88ce0e00-3483-4628-acf2-6137629b9d44",
-      "tls": {
-        "enabled": true,
-        "server_name": "zula.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "FRANCE § 35",
-      "server": "51.178.42.187",
-      "server_port": 443,
-      "uuid": "40d47607-e51d-40d6-a723-e536da630311",
-      "tls": {
-        "enabled": true,
-        "server_name": "zula.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "HK § 36",
-      "server": "74.119.193.40",
-      "server_port": 443,
-      "uuid": "6844c624-7c8c-4e23-8b53-cf78209e93bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "zula.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "JAPAN § 37",
-      "server": "45.83.22.118",
-      "server_port": 443,
-      "uuid": "defd03ed-ef26-415c-a64e-f95edd0d430e",
-      "tls": {
-        "enabled": true,
-        "server_name": "zula.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "Germany 1 § 38",
-      "server": "51.195.101.222",
-      "server_port": 443,
-      "uuid": "56c678a3-c08b-4148-a87b-4e041b680e6f",
-      "tls": {
-        "enabled": true,
-        "server_name": "zula.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "NL Wifi !  § 39",
-      "server": "82.38.31.190",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 40",
+      "tag": "🔺YOUTUBE § 21",
       "server": "iranserver.com",
-      "server_port": 8443,
-      "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
-      "tls": {
-        "enabled": true,
-        "server_name": "sad99366aestingdownload.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server_port": 8080,
+      "uuid": "de3e5ed6-78ae-4575-b91f-701d61c295d6",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/dKVxcdq3CyOC4i1o",
         "headers": {
-          "Host": "sad99366aestingdownload.pages.dev"
+          "Host": "uadbm0zmerbon1e5f6gqolxg6e4xlsk5.janoxa4875.workers.dev"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -762,57 +502,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 41",
-      "server": "iranserver.com",
-      "server_port": 8443,
-      "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
-      "tls": {
-        "enabled": true,
-        "server_name": "d9s9dsdaestingupload.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "d9s9dsdaestingupload.pages.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 42",
-      "server": "iranserver.com",
-      "server_port": 8443,
-      "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
-      "tls": {
-        "enabled": true,
-        "server_name": "rtyeaestingnetwork989.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "rtyeaestingnetwork989.pages.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 43",
+      "tag": "🔺YOUTUBE § 22",
       "server": "iranserver.com",
       "server_port": 443,
       "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
@@ -837,291 +527,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 44",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "48300e8d-4f24-483b-a817-f5e894f06b68",
-      "tls": {
-        "enabled": true,
-        "server_name": "companypdf9.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "companypdf9.pages.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 45",
-      "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "ddde0eb9-62b6-4d30-ac96-ab10d8eb7938",
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "incerthhelldl.ponexor707-20e.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 46",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
-      "tls": {
-        "enabled": true,
-        "server_name": "hidden-heart-22d5.mijoral167.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "hidden-heart-22d5.mijoral167.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 47",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "b20cdbc0-e12c-4b98-97ba-1d7ea8c04ac8",
-      "tls": {
-        "enabled": true,
-        "server_name": "e5324IqSAhCgi7w760EuUCoS8ZUVXf97.taMoD26744.WORkErS.dEV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/yOeDwnc57LbYLQik",
-        "headers": {
-          "Host": "e5324iqsahcgi7w760euucos8zuvxf97.tamod26744.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 48",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "84942386-f8af-4251-8c38-c7a0f9110cd1",
-      "tls": {
-        "enabled": true,
-        "server_name": "InC58cOmPANYUS89925A.nOFAm51699-fE3.WOrKerS.DeV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/7ypBfEO9GanUNCUy",
-        "headers": {
-          "Host": "inc58companyus89925a.nofam51699-fe3.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 49",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "96a65814-3ac0-44bf-80f6-1ce5a1620f2f",
-      "tls": {
-        "enabled": true,
-        "server_name": "howtOiNc56COMpaNyNIKE89.KaVIWi6533.wORkERS.Dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Hk6RfIgg0RVDC8V5",
-        "headers": {
-          "Host": "howtoinc56companynike89.kaviwi6533.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 50",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "0ddce4ab-1351-43fd-af7a-9cfd0778dd56",
-      "tls": {
-        "enabled": true,
-        "server_name": "um48TWyGPhrt30V0lGy-gI42f7ZGqiWm.HofaT69375.wORKErs.dEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fydOF6RAozEF8R75",
-        "headers": {
-          "Host": "um48twygphrt30v0lgy-gi42f7zgqiwm.hofat69375.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 51",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "72111a8b-b535-4791-9b58-1837de0c58ec",
-      "tls": {
-        "enabled": true,
-        "server_name": "5Nk51-r8nHcTEkUj3801G8-MALJc5ZOh.RINOrer845.WOrKeRS.Dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/53EfgFr3jVdBC5X7",
-        "headers": {
-          "Host": "5nk51-r8nhctekuj3801g8-maljc5zoh.rinorer845.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 52",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "fbb2f30a-808f-4d80-b1db-0af57e9c0d18",
-      "tls": {
-        "enabled": true,
-        "server_name": "gRj-6701jWp0eBnnB-4g78LPFq8Fd9q7.hAfAk88333.wORkeRs.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NDnQLUaze1YheCkO",
-        "headers": {
-          "Host": "grj-6701jwp0ebnnb-4g78lpfq8fd9q7.hafak88333.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 53",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "84155b67-f57c-4f1b-809c-f0ce68704b77",
-      "tls": {
-        "enabled": true,
-        "server_name": "3KlH2dA9Z4N73KXB7yV7n04vd6Z-2y0U.kIXira7819.worKErs.dEV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/iH4fflhUZt1nanZM",
-        "headers": {
-          "Host": "3klh2da9z4n73kxb7yv7n04vd6z-2y0u.kixira7819.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 54",
-      "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "de3e5ed6-78ae-4575-b91f-701d61c295d6",
-      "transport": {
-        "type": "ws",
-        "path": "/dKVxcdq3CyOC4i1o",
-        "headers": {
-          "Host": "uadbm0zmerbon1e5f6gqolxg6e4xlsk5.janoxa4875.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 55",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "67e30c4f-50c8-4d1e-803f-09d87d97c6c0",
-      "tls": {
-        "enabled": true,
-        "server_name": "ceLlcoMPaNY9965s.XeyIpOF306.workERS.DEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0IpYnBvzgXJvH80p",
-        "headers": {
-          "Host": "cellcompany9965s.xeyipof306.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 56",
+      "tag": "🔺YOUTUBE § 23",
       "server": "iranserver.com",
       "server_port": 8443,
       "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
@@ -1146,7 +552,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 57",
+      "tag": "🔺YOUTUBE § 24",
       "server": "iranserver.com",
       "server_port": 443,
       "uuid": "a45b6cb6-59b3-4e81-b819-e77b29689d43",
@@ -1171,88 +577,13 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 58",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "1ed8608c-b515-4082-a754-b057e0640247",
-      "tls": {
-        "enabled": true,
-        "server_name": "PlaNEtdevELoPErSicUsDL3895dl.LEVibiG676.WoRkERS.DEV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/SSpW9jA7PCoMuj0V",
-        "headers": {
-          "Host": "planetdevelopersicusdl3895dl.levibig676.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 59",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "87756e07-0c02-4f38-8b55-1e2772df21b1",
-      "tls": {
-        "enabled": true,
-        "server_name": "ForLoVEinCOMPANY649.PIXEM79621.woRKers.DEV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/YtVlkrrsUfUTKgZm",
-        "headers": {
-          "Host": "forloveincompany649.pixem79621.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 60",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "5050e255-4919-4d7f-96c8-30b13d06fdf6",
-      "tls": {
-        "enabled": true,
-        "server_name": "1mCijea74uYkCcQ2mZrX-MNGHduCyF0B.DAMav48375.wORKErs.DeV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/nXWz3i2XoxHvOGI4",
-        "headers": {
-          "Host": "1mcijea74uykccq2mzrx-mnghducyf0b.damav48375.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 61",
+      "tag": "🔺YOUTUBE § 25",
       "server": "iranserver.com",
       "server_port": 8443,
       "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
       "tls": {
         "enabled": true,
-        "server_name": "aasdasdestingdownloadupload.pages.dev",
+        "server_name": "rtyeaestingnetwork989.pages.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1262,7 +593,7 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "aasdasdestingdownloadupload.pages.dev"
+          "Host": "rtyeaestingnetwork989.pages.dev"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1271,63 +602,13 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 62",
-      "server": "iranserver.com",
-      "server_port": 8443,
-      "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
-      "tls": {
-        "enabled": true,
-        "server_name": "dsaddaestingnetwork99s8s.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dsaddaestingnetwork99s8s.pages.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 63",
-      "server": "iranserver.com",
-      "server_port": 8443,
-      "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
-      "tls": {
-        "enabled": true,
-        "server_name": "dday99aestingdownloadupload.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dday99aestingdownloadupload.pages.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 64",
+      "tag": "🔺YOUTUBE § 26",
       "server": "iranserver.com",
       "server_port": 443,
-      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
+      "uuid": "67e30c4f-50c8-4d1e-803f-09d87d97c6c0",
       "tls": {
         "enabled": true,
-        "server_name": "nice-try-worker-inc.weredex932.workers.dev",
+        "server_name": "ceLlcoMPaNY9965s.XeyIpOF306.workERS.DEv",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1335,9 +616,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
+        "path": "/0IpYnBvzgXJvH80p",
         "headers": {
-          "Host": "nice-try-worker-inc.weredex932.workers.dev"
+          "Host": "cellcompany9965s.xeyipof306.workers.dev"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1346,32 +627,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 65",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "2b84eaef-c8ef-47f3-903d-83e7c508eac8",
-      "tls": {
-        "enabled": true,
-        "server_name": "jTj4wYiWU5oMcw5ErvTC3dt8pu0AtCzS.foRAp89561.WoRKeRS.Dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NiB6APtS87wp5Js8",
-        "headers": {
-          "Host": "jtj4wyiwu5omcw5ervtc3dt8pu0atczs.forap89561.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 66",
+      "tag": "🔺YOUTUBE § 27",
       "server": "iranserver.com",
       "server_port": 443,
       "uuid": "403101ad-ed54-458b-8d0e-124d6096388c",
@@ -1396,107 +652,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 67",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "aa3b98ae-1807-4561-9e89-fc9c2ff97d28",
-      "tls": {
-        "enabled": true,
-        "server_name": "36bQ2wyebANI9jnHwGYFl1YA9r9xECBR.MiheSEw262.WOrkErS.dEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/qsRzYI9dWjhYOM9G",
-        "headers": {
-          "Host": "36bq2wyebani9jnhwgyfl1ya9r9xecbr.mihesew262.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 68",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "ca1a1f9d-7588-456a-9151-d0f6db74b895",
-      "tls": {
-        "enabled": true,
-        "server_name": "jUpb1I-2Q0er6lGBq4DJzJ-3wkn1TY2M.lImowat372.wORKerS.DeV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vM5O1qk2KO5PMbqO",
-        "headers": {
-          "Host": "jupb1i-2q0er6lgbq4djzj-3wkn1ty2m.limowat372.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 69",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "ae658497-2809-4ecb-86d5-db73867bfa38",
-      "tls": {
-        "enabled": true,
-        "server_name": "9oPprODUcTINCHELloauS9678.rIDic35214.wORkERS.DEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/WxedDvrJwCt8Kd1r",
-        "headers": {
-          "Host": "9opproductinchelloaus9678.ridic35214.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 70",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "a49f257d-52c6-439c-b66d-e4d1dca6a3c2",
-      "tls": {
-        "enabled": true,
-        "server_name": "AppcompAnyinCdl38s.VoPiboW888.workers.DEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MRcZkrxmm9TMPsjS",
-        "headers": {
-          "Host": "appcompanyincdl38s.vopibow888.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 71",
+      "tag": "🔺YOUTUBE § 28",
       "server": "iranserver.com",
       "server_port": 443,
       "uuid": "ce0251be-7f5c-427b-ae86-06ba6c3c13d8",
@@ -1521,13 +677,13 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 72",
+      "tag": "🔺YOUTUBE § 29",
       "server": "iranserver.com",
       "server_port": 443,
-      "uuid": "bea83394-b074-4837-8b88-4e1b6681160c",
+      "uuid": "1ed8608c-b515-4082-a754-b057e0640247",
       "tls": {
         "enabled": true,
-        "server_name": "T64OO5iiJOrW91GL4sBTD7XQ0eUH7fd0.YiPaJe6465.WOrKErs.DEv",
+        "server_name": "PlaNEtdevELoPErSicUsDL3895dl.LEVibiG676.WoRkERS.DEV",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1535,9 +691,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/YbGbyJAb9UFVmrXB",
+        "path": "/SSpW9jA7PCoMuj0V",
         "headers": {
-          "Host": "t64oo5iijorw91gl4sbtd7xq0euh7fd0.yipaje6465.workers.dev"
+          "Host": "planetdevelopersicusdl3895dl.levibig676.workers.dev"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1546,13 +702,13 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 73",
+      "tag": "🔺YOUTUBE § 30",
       "server": "iranserver.com",
       "server_port": 443,
-      "uuid": "d16ad333-f353-4fd3-b457-01d147578c3a",
+      "uuid": "87756e07-0c02-4f38-8b55-1e2772df21b1",
       "tls": {
         "enabled": true,
-        "server_name": "4cDW-V-kv1OS05S452q2VUP4-E9l3g36.dexAy16053.worKerS.DEv",
+        "server_name": "ForLoVEinCOMPANY649.PIXEM79621.woRKers.DEV",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1560,9 +716,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/3f0DtDEjJL70uG4H",
+        "path": "/YtVlkrrsUfUTKgZm",
         "headers": {
-          "Host": "4cdw-v-kv1os05s452q2vup4-e9l3g36.dexay16053.workers.dev"
+          "Host": "forloveincompany649.pixem79621.workers.dev"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1571,47 +727,13 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 74",
+      "tag": "🔺YOUTUBE § 31",
       "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "f5b62999-fee8-4822-b9ae-8bd6383422aa",
-      "transport": {
-        "type": "ws",
-        "path": "/dkOXucSlLubhaHaL",
-        "headers": {
-          "Host": "q7uysow9l05h6zx9p4oyfij54wu3jg8t.vixod92364.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 75",
-      "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "85f7e5d9-cee3-4df1-8cd3-546f023ed254",
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "y.tehihoj904.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 76",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "cdde0eb9-62b6-4d30-ac96-ab10d8eb7938",
+      "server_port": 8443,
+      "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
       "tls": {
         "enabled": true,
-        "server_name": "inc3erthhell.pages.dev",
+        "server_name": "d9s9dsdaestingupload.pages.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1619,9 +741,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
+        "path": "/",
         "headers": {
-          "Host": "inc3erthhell.pages.dev"
+          "Host": "d9s9dsdaestingupload.pages.dev"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1630,142 +752,7 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 77",
-      "server": "iranserver.com",
-      "server_port": 80,
-      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "delicate-shape-a1b0.visot77057.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 78",
-      "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "cdde0eb9-62b6-4d30-ac96-ab10d8eb7938",
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "delicate-river-fa2b.temesa1402.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 79",
-      "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "41da4eda-35a7-48a9-9c26-c605e0a0feae",
-      "transport": {
-        "type": "ws",
-        "path": "/RhzbS6LP5HLBY6h0",
-        "headers": {
-          "Host": "je4zohihsbm2527vtm5q8khw8c2tx8s2.vuyshhr8.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 80",
-      "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "3816b3f7-e029-4036-aff8-161f59c742c0",
-      "transport": {
-        "type": "ws",
-        "path": "/JVW1TTcmO1uKgbkS",
-        "headers": {
-          "Host": "rnl42bzh5dyegsz9beorjcq915gmwrd8.metlord2sharr.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 81",
-      "server": "iranserver.com",
-      "server_port": 2053,
-      "uuid": "6d288402-6ef9-4092-9d52-c528690fb693",
-      "tls": {
-        "enabled": true,
-        "server_name": "PMlMyaZd-6s6.pAgeS.DEV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ifZR5XrgLtXByEVl/MTIxLjU0LjMwLjE1OQ==",
-        "headers": {
-          "Host": "pmlmyazd-6s6.pages.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 82",
-      "server": "iranserver.com",
-      "server_port": 8080,
-      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "quiet-bread-928e.wadas15468.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 83",
-      "server": "iranserver.com",
-      "server_port": 443,
-      "uuid": "16d7a04d-e6f4-479f-8914-80d3817317f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "ed19-dc7.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ISoOMY675XVPxHG4",
-        "headers": {
-          "Host": "ed19-dc7.pages.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🔺YOUTUBE § 84",
+      "tag": "🔺YOUTUBE § 32",
       "server": "iranserver.com",
       "server_port": 443,
       "uuid": "ea13b0f0-c2fa-4efc-a06f-26319622c71f",
@@ -1790,7 +777,501 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 85",
+      "tag": "🔺YOUTUBE § 33",
+      "server": "iranserver.com",
+      "server_port": 8443,
+      "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
+      "tls": {
+        "enabled": true,
+        "server_name": "aasdasdestingdownloadupload.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "aasdasdestingdownloadupload.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 34",
+      "server": "iranserver.com",
+      "server_port": 8443,
+      "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
+      "tls": {
+        "enabled": true,
+        "server_name": "dsaddaestingnetwork99s8s.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dsaddaestingnetwork99s8s.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 35",
+      "server": "iranserver.com",
+      "server_port": 8443,
+      "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
+      "tls": {
+        "enabled": true,
+        "server_name": "dday99aestingdownloadupload.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dday99aestingdownloadupload.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 36",
+      "server": "iranserver.com",
+      "server_port": 8443,
+      "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
+      "tls": {
+        "enabled": true,
+        "server_name": "3powaestingdownloadupload.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "3powaestingdownloadupload.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 37",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "2b84eaef-c8ef-47f3-903d-83e7c508eac8",
+      "tls": {
+        "enabled": true,
+        "server_name": "jTj4wYiWU5oMcw5ErvTC3dt8pu0AtCzS.foRAp89561.WoRKeRS.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NiB6APtS87wp5Js8",
+        "headers": {
+          "Host": "jtj4wyiwu5omcw5ervtc3dt8pu0atczs.forap89561.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 38",
+      "server": "iranserver.com",
+      "server_port": 8443,
+      "uuid": "27e30c4f-50c8-4d1e-803f-09d87d97c6c0",
+      "tls": {
+        "enabled": true,
+        "server_name": "sad99366aestingdownload.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sad99366aestingdownload.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 39",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "aa3b98ae-1807-4561-9e89-fc9c2ff97d28",
+      "tls": {
+        "enabled": true,
+        "server_name": "36bQ2wyebANI9jnHwGYFl1YA9r9xECBR.MiheSEw262.WOrkErS.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/qsRzYI9dWjhYOM9G",
+        "headers": {
+          "Host": "36bq2wyebani9jnhwgyfl1ya9r9xecbr.mihesew262.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 40",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "ca1a1f9d-7588-456a-9151-d0f6db74b895",
+      "tls": {
+        "enabled": true,
+        "server_name": "jUpb1I-2Q0er6lGBq4DJzJ-3wkn1TY2M.lImowat372.wORKerS.DeV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vM5O1qk2KO5PMbqO",
+        "headers": {
+          "Host": "jupb1i-2q0er6lgbq4djzj-3wkn1ty2m.limowat372.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 41",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "a49f257d-52c6-439c-b66d-e4d1dca6a3c2",
+      "tls": {
+        "enabled": true,
+        "server_name": "AppcompAnyinCdl38s.VoPiboW888.workers.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MRcZkrxmm9TMPsjS",
+        "headers": {
+          "Host": "appcompanyincdl38s.vopibow888.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 42",
+      "server": "iranserver.com",
+      "server_port": 8080,
+      "uuid": "ddde0eb9-62b6-4d30-ac96-ab10d8eb7938",
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "incerthhelldl.ponexor707-20e.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 43",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "bea83394-b074-4837-8b88-4e1b6681160c",
+      "tls": {
+        "enabled": true,
+        "server_name": "T64OO5iiJOrW91GL4sBTD7XQ0eUH7fd0.YiPaJe6465.WOrKErs.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/YbGbyJAb9UFVmrXB",
+        "headers": {
+          "Host": "t64oo5iijorw91gl4sbtd7xq0euh7fd0.yipaje6465.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 44",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "d16ad333-f353-4fd3-b457-01d147578c3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "4cDW-V-kv1OS05S452q2VUP4-E9l3g36.dexAy16053.worKerS.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/3f0DtDEjJL70uG4H",
+        "headers": {
+          "Host": "4cdw-v-kv1os05s452q2vup4-e9l3g36.dexay16053.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 45",
+      "server": "iranserver.com",
+      "server_port": 8080,
+      "uuid": "f5b62999-fee8-4822-b9ae-8bd6383422aa",
+      "transport": {
+        "type": "ws",
+        "path": "/dkOXucSlLubhaHaL",
+        "headers": {
+          "Host": "q7uysow9l05h6zx9p4oyfij54wu3jg8t.vixod92364.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 46",
+      "server": "iranserver.com",
+      "server_port": 8080,
+      "uuid": "85f7e5d9-cee3-4df1-8cd3-546f023ed254",
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "y.tehihoj904.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 47",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "cdde0eb9-62b6-4d30-ac96-ab10d8eb7938",
+      "tls": {
+        "enabled": true,
+        "server_name": "inc3erthhell.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "inc3erthhell.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 48",
+      "server": "iranserver.com",
+      "server_port": 8080,
+      "uuid": "cdde0eb9-62b6-4d30-ac96-ab10d8eb7938",
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "delicate-river-fa2b.temesa1402.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 49",
+      "server": "iranserver.com",
+      "server_port": 8080,
+      "uuid": "41da4eda-35a7-48a9-9c26-c605e0a0feae",
+      "transport": {
+        "type": "ws",
+        "path": "/RhzbS6LP5HLBY6h0",
+        "headers": {
+          "Host": "je4zohihsbm2527vtm5q8khw8c2tx8s2.vuyshhr8.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 50",
+      "server": "iranserver.com",
+      "server_port": 8080,
+      "uuid": "3816b3f7-e029-4036-aff8-161f59c742c0",
+      "transport": {
+        "type": "ws",
+        "path": "/JVW1TTcmO1uKgbkS",
+        "headers": {
+          "Host": "rnl42bzh5dyegsz9beorjcq915gmwrd8.metlord2sharr.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 51",
+      "server": "iranserver.com",
+      "server_port": 2053,
+      "uuid": "6d288402-6ef9-4092-9d52-c528690fb693",
+      "tls": {
+        "enabled": true,
+        "server_name": "PMlMyaZd-6s6.pAgeS.DEV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ifZR5XrgLtXByEVl/MTIxLjU0LjMwLjE1OQ==",
+        "headers": {
+          "Host": "pmlmyazd-6s6.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 52",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
+      "tls": {
+        "enabled": true,
+        "server_name": "hidden-heart-22d5.mijoral167.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "hidden-heart-22d5.mijoral167.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 53",
+      "server": "iranserver.com",
+      "server_port": 8080,
+      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "quiet-bread-928e.wadas15468.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 54",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
+      "tls": {
+        "enabled": true,
+        "server_name": "nice-try-worker-inc.weredex932.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "nice-try-worker-inc.weredex932.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 55",
       "server": "iranserver.com",
       "server_port": 443,
       "uuid": "bdde0eb9-62c6-4d30-ac96-ab10d8eb7939",
@@ -1815,13 +1296,13 @@
     },
     {
       "type": "vless",
-      "tag": "🔺YOUTUBE § 86",
+      "tag": "🔺YOUTUBE § 56",
       "server": "iranserver.com",
-      "server_port": 8443,
-      "uuid": "79c0a4ef-bbd7-48f9-954b-08c5fbb5caf0",
+      "server_port": 443,
+      "uuid": "b20cdbc0-e12c-4b98-97ba-1d7ea8c04ac8",
       "tls": {
         "enabled": true,
-        "server_name": "3powaestingdownloadupload.pages.dev",
+        "server_name": "e5324IqSAhCgi7w760EuUCoS8ZUVXf97.taMoD26744.WORkErS.dEV",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1829,9 +1310,276 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/yOeDwnc57LbYLQik",
         "headers": {
-          "Host": "3powaestingdownloadupload.pages.dev"
+          "Host": "e5324iqsahcgi7w760euucos8zuvxf97.tamod26744.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 57",
+      "server": "iranserver.com",
+      "server_port": 80,
+      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "delicate-shape-a1b0.visot77057.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 58",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "84942386-f8af-4251-8c38-c7a0f9110cd1",
+      "tls": {
+        "enabled": true,
+        "server_name": "InC58cOmPANYUS89925A.nOFAm51699-fE3.WOrKerS.DeV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/7ypBfEO9GanUNCUy",
+        "headers": {
+          "Host": "inc58companyus89925a.nofam51699-fe3.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 59",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "96a65814-3ac0-44bf-80f6-1ce5a1620f2f",
+      "tls": {
+        "enabled": true,
+        "server_name": "howtOiNc56COMpaNyNIKE89.KaVIWi6533.wORkERS.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Hk6RfIgg0RVDC8V5",
+        "headers": {
+          "Host": "howtoinc56companynike89.kaviwi6533.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 60",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "84155b67-f57c-4f1b-809c-f0ce68704b77",
+      "tls": {
+        "enabled": true,
+        "server_name": "3KlH2dA9Z4N73KXB7yV7n04vd6Z-2y0U.kIXira7819.worKErs.dEV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/iH4fflhUZt1nanZM",
+        "headers": {
+          "Host": "3klh2da9z4n73kxb7yv7n04vd6z-2y0u.kixira7819.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 61",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "ae658497-2809-4ecb-86d5-db73867bfa38",
+      "tls": {
+        "enabled": true,
+        "server_name": "9oPprODUcTINCHELloauS9678.rIDic35214.wORkERS.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/WxedDvrJwCt8Kd1r",
+        "headers": {
+          "Host": "9opproductinchelloaus9678.ridic35214.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 62",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "5050e255-4919-4d7f-96c8-30b13d06fdf6",
+      "tls": {
+        "enabled": true,
+        "server_name": "1mCijea74uYkCcQ2mZrX-MNGHduCyF0B.DAMav48375.wORKErs.DeV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nXWz3i2XoxHvOGI4",
+        "headers": {
+          "Host": "1mcijea74uykccq2mzrx-mnghducyf0b.damav48375.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 63",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "48300e8d-4f24-483b-a817-f5e894f06b68",
+      "tls": {
+        "enabled": true,
+        "server_name": "companypdf9.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "companypdf9.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 64",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "16d7a04d-e6f4-479f-8914-80d3817317f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "ed19-dc7.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ISoOMY675XVPxHG4",
+        "headers": {
+          "Host": "ed19-dc7.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 65",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "0ddce4ab-1351-43fd-af7a-9cfd0778dd56",
+      "tls": {
+        "enabled": true,
+        "server_name": "um48TWyGPhrt30V0lGy-gI42f7ZGqiWm.HofaT69375.wORKErs.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fydOF6RAozEF8R75",
+        "headers": {
+          "Host": "um48twygphrt30v0lgy-gi42f7zgqiwm.hofat69375.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 66",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "72111a8b-b535-4791-9b58-1837de0c58ec",
+      "tls": {
+        "enabled": true,
+        "server_name": "5Nk51-r8nHcTEkUj3801G8-MALJc5ZOh.RINOrer845.WOrKeRS.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/53EfgFr3jVdBC5X7",
+        "headers": {
+          "Host": "5nk51-r8nhctekuj3801g8-maljc5zoh.rinorer845.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🔺YOUTUBE § 67",
+      "server": "iranserver.com",
+      "server_port": 443,
+      "uuid": "fbb2f30a-808f-4d80-b1db-0af57e9c0d18",
+      "tls": {
+        "enabled": true,
+        "server_name": "gRj-6701jWp0eBnnB-4g78LPFq8Fd9q7.hAfAk88333.wORkeRs.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NDnQLUaze1YheCkO",
+        "headers": {
+          "Host": "grj-6701jwp0ebnnb-4g78lpfq8fd9q7.hafak88333.workers.dev"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1852,7 +1600,7 @@
       "tls_fragment": {
         "enabled": true,
         "size": "10-30",
-        "sleep": "2-8"
+        "sleep": "0-0"
       }
     },
     {
@@ -1917,7 +1665,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:16756",
-      "secret": "sCb6Lx036FjlSjOA"
+      "secret": "tpLH6a7R1XKs3xPu"
     }
   }
 }
